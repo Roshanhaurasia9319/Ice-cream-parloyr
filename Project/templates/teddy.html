@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Define the styles for the success message */
+        .success-message {
+            text-align: center;
+            font-size: 100px;
+            color: cornsilk;
+            animation-name: success;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        /* Define the animation keyframes */
+        @keyframes success {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    /* Define the styles for the ice cream cone */
+    .cone {
+            width: 200px;
+            height: 300px;
+            background-color: #D2691E;
+            position: relative;
+            margin: 0 auto;
+            border-bottom-left-radius: 50% 75px;
+            border-bottom-right-radius: 50% 75px;
+        }
+
+        /* Define the styles for the ice cream scoop */
+        .scoop {
+            width: 150px;
+            height: 150px;
+            background-color: #FFC0CB;
+            position: absolute;
+            top: -50px;
+            left: 25px;
+            border-radius: 50%;
+            transform: rotate(-15deg);
+            animation-name: wiggle;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        /* Define the keyframes for the ice cream scoop animation */
+        @keyframes wiggle {
+            0% {
+                transform: rotate(-15deg);
+            }
+            100% {
+                transform: rotate(15deg);
+            }
+        }
+
+        /* Define the styles for the tick mark */
+        .tick {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+        }
+
+        .tick:before,
+        .tick:after {
+            content: '';
+            position: absolute;
+            background-color: #FFFFFF;
+        }
+
+        .tick:before {
+            width: 10px;
+            height: 70px;
+            transform: rotate(-45deg);
+        }
+
+        .tick:after {
+            width: 40px;
+            height: 10px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body style="background-color: chocolate; padding: 50px;">
+    <div class="success-message">
+        Submitted successfully!
+        <body style="background-color: #FFD700;">
+            <div class="cone">
+                <div class="scoop"></div>
+            </div>
+            <div class="tick"></div>
+        </body>
+    </div>
+</body>
+</html>

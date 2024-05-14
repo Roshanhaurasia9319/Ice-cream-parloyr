@@ -1,0 +1,31 @@
+.container-fluid-blueviolet {
+    background-color: blueviolet;
+}
+
+.container-fluid-green {
+    background-color: rgb(192, 226, 43);
+}
+
+.container-fluid-green2 {
+    background-color: rgb(43, 226, 58);
+}
+
+.container-fluid-red {
+    background-color: rgb(226, 43, 43);
+}
+
+.container-fluid-red2 {
+    background-color: rgb(226, 43, 171);
+}
+
+.container-fluid-blue {
+    background-color: rgb(42, 116, 165);
+}
+
+.container-fluid-brown {
+    background-color: brown;
+}
+
+.container-orange {
+    background-color: orange;
+}
